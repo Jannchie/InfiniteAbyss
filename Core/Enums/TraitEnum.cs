@@ -2,6 +2,6 @@
 {
     public enum TraitEnum
     {
-       CHARMING
+        PrettyFairy, Charming, Ugly,
     }
 }

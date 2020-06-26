@@ -6,8 +6,8 @@ namespace InfiniteAbyss.Core.Enums
 {
     public enum RaceEnum
     {
-        HUMAN,
-        ELF,
-        REPTILE
+        Human,
+        Elf,
+        Reptile
     }
 }

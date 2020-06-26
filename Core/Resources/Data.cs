@@ -11,14 +11,14 @@ namespace InfiniteAbyss.Core.Resources
         /// </summary>
         public static Dictionary<RaceEnum, AbilitiesModifiersInfo> RaceData { get; set; } = new Dictionary<RaceEnum, AbilitiesModifiersInfo>
             {
-                { RaceEnum.HUMAN, new AbilitiesModifiersInfo("身为人类", 1, 1, 1, 1, 1, 1) },
-                { RaceEnum.ELF, new AbilitiesModifiersInfo("身为精灵", -2, 2, 1, 0, 2, 3) },
-                { RaceEnum.REPTILE, new AbilitiesModifiersInfo("身为蜥蜴人", 3, 2, 2, 0, 1, -2) }
+                { RaceEnum.Human, new AbilitiesModifiersInfo("身为人类", 1, 1, 1, 1, 1, 1) },
+                { RaceEnum.Elf, new AbilitiesModifiersInfo("身为精灵", -2, 2, 1, 0, 2, 3) },
+                { RaceEnum.Reptile, new AbilitiesModifiersInfo("身为蜥蜴人", 3, 2, 2, 0, 1, -2) }
             };
 
         public static Dictionary<TraitEnum, AbilitiesModifiersInfo> TraitData{ get; set; } = new Dictionary<TraitEnum, AbilitiesModifiersInfo>
             {
-                { TraitEnum.CHARMING, new AbilitiesModifiersInfo("极具魅力", 0, 0, 0, 0, 0, 3) }
+                { TraitEnum.Charming, new AbilitiesModifiersInfo("极具魅力", 0, 0, 0, 0, 0, 3) }
             };
     }
 

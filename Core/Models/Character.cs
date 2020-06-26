@@ -14,7 +14,7 @@ namespace InfiniteAbyss.Core.Models
         {
             InitAbality();
 
-            Race = RaceEnum.HUMAN;
+            Race = RaceEnum.Human;
 
             Name = GetRandomName();
         }

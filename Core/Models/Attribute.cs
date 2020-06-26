@@ -63,7 +63,7 @@ namespace InfiniteAbyss.Core.Models
             {
                 if(Modifiers[i].Name == name)
                 {
-                    Modifiers.RemoveAt(i);
+                    RemoveModifier(Modifiers[i]);
                 }
             }
         }

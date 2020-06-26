@@ -1,3 +1,4 @@
+using InfiniteAbyss.Core.Enums;
 using InfiniteAbyss.Core.Managers;
 using InfiniteAbyss.Core.Models;
 using InfiniteAbyss.Core.Resources;
@@ -20,14 +21,14 @@ namespace InfiniteAbyss.Test
         public void Print()
         {
             c.PrintInfo();
-            Assert.Pass();
         }
         [Test]
         public void SwitchRace()
         {
-            c.Race = Core.Enums.RaceEnum.ELF;
+            c.Race = Core.Enums.RaceEnum.Elf;
+            c.Race = Core.Enums.RaceEnum.Human;
             c.PrintInfo();
-            Assert.Pass();
+            Assert.IsTrue(c.Abalities[AbalityEnum.CON].FinalValue == 11);
         }
     }
 }
