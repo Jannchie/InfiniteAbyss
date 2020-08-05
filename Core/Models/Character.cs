@@ -31,7 +31,21 @@ namespace InfiniteAbyss.Core.Models
 
         private string GetRandomName()
         {
-            return "ÎŞÃûÊÏ";
+            return GetRandomFirstName() + GetRandomLastName();
+        }
+
+        private string GetRandomLastName()
+        {
+            Random rnd = new Random();
+            rnd.Next(0,10);
+            return "";
+        }
+
+        private string GetRandomFirstName()
+        {
+            Random rnd = new Random();
+            rnd.Next(0, 10);
+            return "";
         }
 
         public string Name { get; set; }
